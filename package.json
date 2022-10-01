@@ -1,0 +1,26 @@
+{
+  "name": "bot-discord-ogre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maach/bot-discord-ogre.git"
+  },
+  "author": "TUA MÃE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maach/bot-discord-ogre/issues"
+  },
+  "homepage": "https://github.com/Maach/bot-discord-ogre#readme",
+  "dependencies": {
+    "discord.js": "^14.5.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
