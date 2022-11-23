@@ -20,6 +20,6 @@ module.exports = {
         if (interaction.customId == CUSTOMID_NAO_ASSISTIDO)
             button = BUTTON_ASSISTIDO
         await interaction.message.edit({ content: interaction.message.content, components: [ button ] })
-        await interaction.reply({ content: `Coisinha implicante`, ephemeral: true })
+        await interaction.reply({ content: `Alterado status com sucesso!`, ephemeral: true })
     }
 }

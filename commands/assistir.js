@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, ChannelType } = require('discord.js')
+const { SlashCommandBuilder, ChannelType, PermissionFlagsBits } = require('discord.js')
 const buttonAssistido = require(`../buttons/assistido`)
 
 const THREAD_SERIES = `Séries para assistir`
@@ -29,6 +29,7 @@ const data = new SlashCommandBuilder()
                     .setRequired(true)
             })
     })
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
 
 const handleInteraction = async (interaction, title, emoji) => {
     const channels = await interaction.guild.channels.fetch()
