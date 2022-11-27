@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
-const JOGOS = require(`../data/jogos-copa-2022`)
+const PARTIDAS = require(`../data/jogos-copa-2022`)
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -23,20 +23,19 @@ module.exports = {
                 )
                 .setRequired(true)
         })
-        .setDefaultMemberPermissions(PermissionFlagsBits.Administrator, PermissionFlagsBits.ManageEvents),
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageEvents),
 	async execute(interaction) {
         const eventos = await interaction.guild.scheduledEvents.fetch()
-        const partidas = JOGOS[interaction.options.getString("data")]
-        await Promise.all(partidas.map(async partida => {
-            try {
-                const evento = eventos.find(item => item.name == partida.name && item.scheduledStartAt.getTime() == partida.scheduledStartTime.getTime())
-                if (evento)
-                    return await interaction.guild.scheduledEvents.edit(evento.id, partida)
-                return await interaction.guild.scheduledEvents.create(partida)
-            } catch (e) {
-                console.error(e.message)
-            }
-        }))
+        const partida = PARTIDAS[interaction.options.getString("data")]
+        try {
+            const evento = eventos.find(item => item.name == partida.name && item.scheduledStartAt.getTime() == partida.scheduledStartTime.getTime())
+            if (evento)
+                await interaction.guild.scheduledEvents.edit(evento.id, partida)
+            else
+                await interaction.guild.scheduledEvents.create(partida)
+        } catch (e) {
+            console.error(e.message)
+        }
 		await interaction.reply({ content: `As partidas foram atualizadas.`, ephemeral: true })
 	},
 };
