@@ -15,6 +15,7 @@ const structureText = (fase, ...partidas) => {
     return `${bold(fase)}\n\n${formatedPartidas}`
 }
 
+// Fase de Grupos
 const _20112022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`, 
@@ -94,6 +95,76 @@ const _02122022 = {
     scheduledStartTime: new Date("2022-12-02T14:45:00.000Z"), // 02/12/2022 11:45
 }
 
+// Oitavas de final
+const _03122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Oitavas de Final`, [`12:00`, `Holanda 🇳🇱 x 🇺🇸 Estados Unidos`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-03T14:45:00.000Z"), // 03/12/2022 11:45
+}
+const _04122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Oitavas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 x 🇸🇳 Senegal`]),
+    scheduledStartTime: new Date("2022-12-04T14:45:00.000Z"), // 04/12/2022 11:45
+}
+const _05122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Oitavas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-05T14:45:00.000Z"), // 05/12/2022 11:45
+}
+const _06122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Oitavas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-06T14:45:00.000Z"), // 06/12/2022 11:45
+}
+
+// Quartas de Final
+const _09122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Quartas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-09T14:45:00.000Z"), // 09/12/2022 11:45
+}
+const _10122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Quartas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-10T14:45:00.000Z"), // 10/12/2022 11:45
+}
+
+// Semifinais
+const _13122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Semifinais`, [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-13T17:45:00.000Z"), // 13/12/2022 15:45
+}
+const _14122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Semifinais`, [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-14T18:45:00.000Z"), // 14/12/2022 15:45
+}
+
+// Disputa pelo terceiro lugar
+const _17122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Disputa pelo Terceiro lugar`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-17T14:45:00.000Z"), // 17/12/2022 11:45
+}
+
+// Final
+const _18122022 = {
+    ...BASE_OBJ, 
+    name: `Copa do Mundo do Catar 2022`,
+    description: structureText(`Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    scheduledStartTime: new Date("2022-12-18T14:45:00.000Z"), // 18/12/2022 11:45
+}
+
 module.exports = {
     "20/11/2022": { ..._20112022 },
     "21/11/2022": { ..._21112022 },
@@ -108,13 +179,14 @@ module.exports = {
     "30/11/2022": { ..._30112022 },
     "01/12/2022": { ..._01122022 },
     "02/12/2022": { ..._02122022 },
-    "03/12/2022": {  },
-    "04/12/2022": {  },
-    "05/12/2022": {  },
-    "06/12/2022": {  },
-    "09/12/2022": {  },
-    "10/12/2022": {  },
-    "13/12/2022": {  },
-    "17/12/2022": {  },
-    "18/12/2022": {  },
+    "03/12/2022": { ..._03122022 },
+    "04/12/2022": { ..._04122022 },
+    "05/12/2022": { ..._05122022 },
+    "06/12/2022": { ..._06122022 },
+    "09/12/2022": { ..._09122022 },
+    "10/12/2022": { ..._10122022 },
+    "13/12/2022": { ..._13122022 },
+    "14/12/2022": { ..._14122022 },
+    "17/12/2022": { ..._17122022 },
+    "18/12/2022": { ..._18122022 },
 }
