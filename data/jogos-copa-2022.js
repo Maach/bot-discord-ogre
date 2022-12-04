@@ -79,7 +79,7 @@ const _29112022 = {
 const _30112022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Fase de Grupos`, [`12:00`, `Tunísia 🇹🇳 x 🇫🇷 França`], [`12:00`, `Austrália 🇦🇺 x 🇩🇰 Dinamarca`], [`16:00`, `Polônia 🇵🇱 x Argentina`], [`16:00`, `Arábia Saudita 🇸🇦 x 🇲🇽 México`]),
+    description: structureText(`Fase de Grupos`, [`12:00`, `Tunísia 🇹🇳 x 🇫🇷 França`], [`12:00`, `Austrália 🇦🇺 x 🇩🇰 Dinamarca`], [`16:00`, `Polônia 🇵🇱 x 🇦🇷 Argentina`], [`16:00`, `Arábia Saudita 🇸🇦 x 🇲🇽 México`]),
     scheduledStartTime: new Date("2022-11-30T14:45:00.000Z"), // 30/11/2022 11:45
 }
 const _01122022 = {
@@ -99,25 +99,25 @@ const _02122022 = {
 const _03122022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Oitavas de Final`, [`12:00`, `Holanda 🇳🇱 x 🇺🇸 Estados Unidos`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    description: structureText(`Oitavas de Final`, [`12:00`, `Holanda 🇳🇱 x 🇺🇸 Estados Unidos`], [`16:00`, `Argentina 🇦🇷 x 🇦🇺 Austrália`]),
     scheduledStartTime: new Date("2022-12-03T14:45:00.000Z"), // 03/12/2022 11:45
 }
 const _04122022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Oitavas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 x 🇸🇳 Senegal`]),
+    description: structureText(`Oitavas de Final`, [`12:00`, `França 🇫🇷 x 🇵🇱 Polônia`], [`16:00`, `Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 x 🇸🇳 Senegal`]),
     scheduledStartTime: new Date("2022-12-04T14:45:00.000Z"), // 04/12/2022 11:45
 }
 const _05122022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Oitavas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    description: structureText(`Oitavas de Final`, [`12:00`, `Japão 🇯🇵 x 🇭🇷 Croácia`], [`16:00`, `Brasil 🇧🇷 x 🇰🇷 Coreia do Sul`]),
     scheduledStartTime: new Date("2022-12-05T14:45:00.000Z"), // 05/12/2022 11:45
 }
 const _06122022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Oitavas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    description: structureText(`Oitavas de Final`, [`12:00`, `Marrocos 🇲🇦 x 🇪🇸 Espanha`], [`16:00`, `Portugal 🇵🇹 x 🇨🇭 Suíça`]),
     scheduledStartTime: new Date("2022-12-06T14:45:00.000Z"), // 06/12/2022 11:45
 }
 
@@ -125,13 +125,13 @@ const _06122022 = {
 const _09122022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Quartas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    description: structureText(`Quartas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `Holanda 🇳🇱 x 🇦🇷 Argentina`]),
     scheduledStartTime: new Date("2022-12-09T14:45:00.000Z"), // 09/12/2022 11:45
 }
 const _10122022 = {
     ...BASE_OBJ, 
     name: `Copa do Mundo do Catar 2022`,
-    description: structureText(`Quartas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `A Confirmar 🏳 x 🏳 A Confirmar`]),
+    description: structureText(`Quartas de Final`, [`12:00`, `A Confirmar 🏳 x 🏳 A Confirmar`], [`16:00`, `Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 x 🇫🇷 França`]),
     scheduledStartTime: new Date("2022-12-10T14:45:00.000Z"), // 10/12/2022 11:45
 }
 
